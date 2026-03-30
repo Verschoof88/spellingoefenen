@@ -409,7 +409,7 @@ export default function App() {
           <div style={{ width: 80, height: 80, background: '#FFD93D', border: '4px solid #141414', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem', boxShadow: '4px 4px 0 #141414' }}>
             <Trophy size={36} />
           </div>
-          <h1 style={{ fontSize: 'clamp(2rem,7vw,4rem)', fontWeight: 900, margin: '0 0 0.5rem', letterSpacing: '-2px', textTransform: 'uppercase' }}>Weetwoorden Rad</h1>
+          <h1 style={{ fontSize: 'clamp(1.5rem,4vw,2.5rem)', fontWeight: 900, margin: '0 0 0.5rem', letterSpacing: '-2px', textTransform: 'uppercase' }}>Weetwoorden Rad</h1>
           <p style={{ opacity: 0.5, fontWeight: 700, marginBottom: '2rem' }}>Race naar 100 punten! 🏁</p>
 
           {menuStep === 'count' ? (
