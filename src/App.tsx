@@ -1,7 +1,6 @@
 import { useState, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { RotateCcw, Trophy, Star, AlertCircle, CheckCircle2, Play, Maximize, Minimize, Bomb, Volume2, VolumeX } from 'lucide-react';
-
+import { RotateCcw, Trophy, Star, AlertCircle, CheckCircle2, Play, Maximize, Volume2, VolumeX } from 'lucide-react';
 // ── Sound ────────────────────────────────────────────────────────────────────
 const createSoundManager = () => {
   let audioCtx: AudioContext | null = null;
@@ -220,7 +219,7 @@ function AnswerButtons({ category, word, onAnswer }: {
 export default function App() {
   const [gameState, setGameState] = useState<'menu' | 'playing' | 'victory' | 'summary' | 'practice'>('menu');
   const [menuStep, setMenuStep] = useState<'count' | 'names'>('count');
-  const [tempPlayerCount, setTempPlayerCount] = useState(1);
+  const [, setTempPlayerCount] = useState(1);
   const [isTeamMode, setIsTeamMode] = useState(false);
   const [customNames, setCustomNames] = useState<string[]>([]);
   const [players, setPlayers] = useState<Player[]>([]);
